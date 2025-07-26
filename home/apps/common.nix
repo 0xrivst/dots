@@ -2,7 +2,9 @@
 
 {
   home.packages = with pkgs; [
-    age
     brave
-  ];
+  ] ++ (with xfce; [
+    xfce4-panel
+    xfce4-whiskermenu-plugin
+  ]);
 }
