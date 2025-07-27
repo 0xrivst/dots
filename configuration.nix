@@ -36,7 +36,7 @@
     };
   };
 
-  services.displayManager.defaultSession = "xfce+i3";  
+  services.displayManager.defaultSession = "xfce+i3";
 
   services.xserver.xkb.layout = "us";
   # services.xserver.xkb.options = "eurosign:e,caps:escape";
@@ -48,6 +48,10 @@
   };
 
   environment = {
+    systemPackages = [
+      pkgs.go
+    ];
+
     xfce.excludePackages = with pkgs; [
       xfce.xfce4-terminal
     ];
