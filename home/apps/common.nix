@@ -2,10 +2,10 @@
 
 {
   home.packages = with pkgs; [
-    brave
     anki-bin
     keepassxc
     mullvad-browser
+    telegram-desktop
   ] ++ (with xfce; [
     # TODO: Launch from i3
     xfce4-panel
