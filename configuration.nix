@@ -6,6 +6,8 @@
       ./hardware-configuration.nix
     ];
 
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
@@ -28,6 +30,7 @@
         enable = true;
         noDesktop = true;
         enableXfwm = false;
+        # TODO: Look into Xfconf and maybe enable it for backing up the configs
       };
     };
     windowManager.i3 = {
