@@ -1,0 +1,14 @@
+[Groups/0]
+Name=Default
+Default Layout=us
+DefaultIM=keyboard-us
+
+[Groups/1]  
+Name=Japanese
+Default Layout=jp
+DefaultIM=mozc
+
+[Groups/2]
+Name=Russian
+Default Layout=ru
+DefaultIM=keyboard-ru

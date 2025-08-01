@@ -17,33 +17,6 @@
   time.timeZone = "Europe/Sofia";
   i18n.defaultLocale = "en_US.UTF-8";
 
-  services.xserver = {
-    enable = true;
-
-    excludePackages = with pkgs; [
-      xterm
-    ];
-    
-    desktopManager = {
-      xterm.enable = false;
-      xfce = {
-        enable = true;
-        noDesktop = true;
-        enableXfwm = false;
-        # TODO: Look into Xfconf and maybe enable it for backing up the configs
-      };
-    };
-    windowManager.i3 = {
-      enable = true;
-      configFile = ./home/apps/i3/config;
-    };
-  };
-
-  services.displayManager.defaultSession = "xfce+i3";
-
-  services.xserver.xkb.layout = "us";
-  # services.xserver.xkb.options = "eurosign:e,caps:escape";
-
   users.users.boss = {
     isNormalUser = true;
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
@@ -54,10 +27,6 @@
     systemPackages = [
       pkgs.go
     ];
-
-    xfce.excludePackages = with pkgs; [
-      xfce.xfce4-terminal
-    ];
   };
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -67,8 +36,6 @@
   #   enable = true;
   #   enableSSHSupport = true;
   # };
-
-  # List services that you want to enable:
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];

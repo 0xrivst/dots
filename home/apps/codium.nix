@@ -12,6 +12,8 @@
                 jnoortheen.nix-ide
                 # Maybe eventually move Go stuff to per-project flakes (think about it)
                 golang.go
+                wakatime.vscode-wakatime
+                svelte.svelte-vscode
             ];
         };
     };

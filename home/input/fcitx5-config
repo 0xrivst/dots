@@ -1,0 +1,4 @@
+[Hotkey]
+TriggerKeys=CTRL_SPACE
+EnumerateWithMinLength=0
+EnumerateSkipFirst=0
