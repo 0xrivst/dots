@@ -2,6 +2,7 @@
 
 {
   fonts.fonts = with pkgs; [
+    noto-fonts
     noto-fonts-cjk-serif
     noto-fonts-cjk-sans
   ];

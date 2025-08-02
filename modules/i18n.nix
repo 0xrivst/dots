@@ -30,7 +30,4 @@
       };
     };
   };
-
-  # xdg.configFile."fcitx5/config".source = ./fcitx5-config;
-  # xdg.configFile."fcitx5/profile".source = ./fcitx5-profile;
 }
