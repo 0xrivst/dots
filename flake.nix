@@ -25,8 +25,7 @@
 
           modules = [
             ./configuration.nix
-            ./modules/mullvad.nix
-            ./modules/hypr.nix
+            ./modules
 
             { nixpkgs.overlays = [ nix-vscode-extensions.overlays.default ]; }
 

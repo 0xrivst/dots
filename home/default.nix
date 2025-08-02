@@ -3,7 +3,6 @@
 {
 	imports = [
 		./apps
-		./input/i18n.nix
 	];
 
 	home = {
